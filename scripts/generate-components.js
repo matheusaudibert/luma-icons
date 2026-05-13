@@ -27,10 +27,9 @@ const INDEX_FILE = path.join(__dirname, '..', 'src', 'index.ts');
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
 
 const noColorSet = new Set(
-  fs.readFileSync(NO_COLOR_FILE, 'utf8')
-    .split('\n')
-    .map(l => l.trim())
-    .filter(Boolean)
+  fs.existsSync(NO_COLOR_FILE)
+    ? fs.readFileSync(NO_COLOR_FILE, 'utf8').split('\n').map(l => l.trim()).filter(Boolean)
+    : []
 );
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
