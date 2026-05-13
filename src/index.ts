@@ -97,7 +97,6 @@ export { DetailsFilled16 } from './icons/DetailsFilled16';
 export { Dollar16 } from './icons/Dollar16';
 export { DollarFilled16 } from './icons/DollarFilled16';
 export { Download16 } from './icons/Download16';
-export { DragHandle } from './icons/DragHandle';
 export { Edit16 } from './icons/Edit16';
 export { Embed16 } from './icons/Embed16';
 export { End16 } from './icons/End16';
