@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Map16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10.68 14.922a.81.81 0 0 1-.693 0l-3.974-1.856a.81.81 0 0 0-.693 0l-3.68 1.719a.41.41 0 0 1-.436-.055.57.57 0 0 1-.204-.454V3.834c0-.446.232-.847.587-1.012L5.32 1.078a.81.81 0 0 1 .693 0l3.974 1.856a.81.81 0 0 0 .693 0l3.68-1.716a.41.41 0 0 1 .436.055.58.58 0 0 1 .204.454v10.44c0 .445-.232.846-.587 1.011zM5.5 2v11m5-10v12"></path>
+  </svg>
+);

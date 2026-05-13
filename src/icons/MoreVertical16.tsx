@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const MoreVertical16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M6.934 14.305a1.5 1.5 0 0 1 0-2.11l.005-.006.006-.005a1.5 1.5 0 0 1 2.11 0l.006.005.005.006a1.5 1.5 0 0 1 0 2.11l-.005.006-.006.005a1.5 1.5 0 0 1-2.11 0l-.006-.005zm0-5.25a1.5 1.5 0 0 1 0-2.11l.005-.006.006-.005a1.5 1.5 0 0 1 2.11 0l.006.005.005.006a1.5 1.5 0 0 1 0 2.11l-.005.006-.006.005a1.5 1.5 0 0 1-2.11 0l-.006-.005zM6.5 2.75c0 .411.167.785.434 1.055l.005.006.006.005a1.5 1.5 0 0 0 2.11 0l.006-.005.005-.006a1.5 1.5 0 0 0 0-2.11l-.005-.006-.006-.005a1.5 1.5 0 0 0-2.11 0l-.006.005-.005.006A1.5 1.5 0 0 0 6.5 2.75"></path>
+  </svg>
+);

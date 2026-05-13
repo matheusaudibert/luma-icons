@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ModalSignature = ({ size = 2, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillOpacity="0.133" d="M17.665 19.14a2.07 2.07 0 0 1 .6-1.59l6.494-6.494 3.65 3.65-6.494 6.493c-.42.42-1 .638-1.591.6l-1.29-.082a1.376 1.376 0 0 1-1.287-1.285z"></path><path fill="currentColor" fillOpacity="0.133" d="m24.759 11.057 1.095-1.095c.339-.34.508-.51.677-.622a2.06 2.06 0 0 1 2.294 0c.17.113.339.282.678.622.34.339.509.508.622.677.464.695.464 1.6 0 2.294-.113.17-.283.339-.622.678l-1.095 1.095z"></path><path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M3.088 12.458C-.064 8.86 1.53 4.256 4.692 3.708c2.627-.456 7.475 1.35 5.172 11.804-1.109 5.035-4.624 6.715-6.182 5.773-2.54-1.534-.594-6.09 4.957-8.052 2.516-.89 5.022-.44 5.277 1.413.271 1.971-2.217 4.826 0 6.64"></path><path stroke="currentColor" strokeWidth="2" d="m24.906 10.745-6.493 6.493c-.42.42-.638 1-.6 1.592l.082 1.29a1.376 1.376 0 0 0 1.286 1.286l1.29.082a2.07 2.07 0 0 0 1.592-.6l6.493-6.493m-3.65-3.65 3.65 3.65m-3.65-3.65 1.095-1.095c.34-.339.509-.508.678-.621a2.065 2.065 0 0 1 2.294 0c.169.113.338.282.678.621.339.34.508.51.621.678.464.694.464 1.6 0 2.294-.113.17-.282.339-.621.678l-1.095 1.095"></path><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 28 30-.007"></path>
+  </svg>
+);

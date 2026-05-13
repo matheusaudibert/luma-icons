@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const PinFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M8 9.032c-1.327 0-2.406-1.043-2.406-2.324S6.674 4.385 8 4.385s2.405 1.042 2.405 2.323S9.327 9.032 8 9.032M8 0C4.14 0 1 3.032 1 6.76 1 11.506 6.75 16 8 16s7-4.494 7-9.24C15 3.032 11.86 0 8 0"></path>
+  </svg>
+);

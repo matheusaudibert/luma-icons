@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const BrandsStripe = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 160 160"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M80 5c41.421 0 75 33.579 75 75s-33.579 75-75 75S5 121.421 5 80 38.579 5 80 5m1.8 29.6C61.5 34.6 48 45.2 48 62.9 48 90.5 86 86.1 86 98c0 4.6-4 6.1-9.6 6.1-8.3 0-18.9-3.4-27.3-8v23.8c9.3 4 18.7 5.7 27.3 5.7 20.8 0 35.1-10.3 35.1-28.2-.1-29.8-38.2-24.5-38.2-35.7 0-3.9 3.2-5.4 8.5-5.4 7.6 0 17.2 2.3 24.8 6.4V39.2c-8.3-3.3-16.5-4.6-24.8-4.6"></path>
+  </svg>
+);

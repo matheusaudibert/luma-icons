@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Shuffle16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M12.064 3.809V2.767c0-.524.59-.831 1.019-.53l2.54 1.778a.648.648 0 0 1 0 1.061l-2.54 1.779a.648.648 0 0 1-1.02-.53V5.281h-.456a3.58 3.58 0 0 0-2.845 1.406L7.758 8l1.003 1.312a3.58 3.58 0 0 0 2.846 1.406h.457V9.676c0-.524.59-.831 1.019-.53l2.54 1.778a.648.648 0 0 1 0 1.061l-2.54 1.779a.648.648 0 0 1-1.02-.53V12.19h-.456a5.06 5.06 0 0 1-4.016-1.984l-.76-.995-1.09 1.427a5.06 5.06 0 0 1-4.016 1.984H.836a.736.736 0 1 1 0-1.473h.89A3.58 3.58 0 0 0 4.57 9.743L5.904 8 4.57 6.256A3.58 3.58 0 0 0 1.725 4.85H.836a.736.736 0 0 1 0-1.473h.89c1.574 0 3.058.734 4.014 1.984l1.091 1.427.76-.995a5.06 5.06 0 0 1 4.016-1.984z" clipRule="evenodd"></path>
+  </svg>
+);

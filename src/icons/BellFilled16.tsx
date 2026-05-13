@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const BellFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M15 9.753c-.207 2.2-2.356 2.747-7 2.747-4.643 0-6.792-.54-7-2.747 0-1.042.523-1.558 1.072-2.1.608-.601 1.25-1.234 1.25-2.651C3.321 2.772 4.668.5 8 .5s4.679 2.396 4.679 4.502c0 1.417.64 2.05 1.25 2.65.547.544 1.071 1.06 1.071 2.102m-8.143 3.733a1 1 0 0 0-1.714 1.028C5.775 15.57 6.963 16 8 16c1.036 0 2.225-.43 2.858-1.485a1 1 0 0 0-1.715-1.03c-.168.28-.58.515-1.143.515s-.975-.236-1.143-.514"></path>
+  </svg>
+);

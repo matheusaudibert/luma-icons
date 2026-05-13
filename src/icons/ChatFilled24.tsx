@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ChatFilled24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12c0 2.268.63 4.39 1.723 6.2.138.227.25.476.246.742-.021 1.434-1.381 3.047-1.828 3.539-.077.084-.072.214.027.27.756.421 2.595.294 4.36-.273a2.5 2.5 0 0 1 1.917.162C8.105 23.509 9.995 24 12 24" clipRule="evenodd"></path>
+  </svg>
+);

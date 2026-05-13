@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const BrandsFacebook = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 512 512"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M504 258c0-137-111-248-248-248S8 121 8 258c0 123.78 90.69 226.38 209.25 245V329.69h-63V258h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V258h68.78l-11 71.69h-57.78V503C413.31 484.38 504 381.78 504 258"></path>
+  </svg>
+);

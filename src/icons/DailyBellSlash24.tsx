@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const DailyBellSlash24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M9.15 4.9 7.72 3.47A6.95 6.95 0 0 1 12 2c3.87 0 7 3.13 7 7 0 2.39.43 4.74 1.22 6.98l-2.83-2.83c-.25-1.36-.39-2.74-.39-4.13 0-2.77-2.24-5.01-5-5.01a5 5 0 0 0-2.85.9zM21 19.58 19.58 21l-3-3h-.59c0 2.21-1.79 4-4 4s-4-1.79-4-4H3l.45-1.11C4.47 14.38 5 11.7 5 9c0-.78.13-1.52.37-2.22L3 4.42l1.41-1.41 1.91 1.91 1.45 1.45 9.64 9.64 2 2L21 19.59zM14 18h-4c0 1.1.9 2 2 2s2-.9 2-2m.59-2L7.06 8.47c-.02.18-.05.35-.05.53 0 2.39-.37 4.74-1.1 7z"></path>
+  </svg>
+);

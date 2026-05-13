@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const FontDeparture = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 88 88"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M7.91 25.91V63h6.182V44.455h18.545V63h6.182V25.91h-6.182v12.363H14.092V25.91zm12.364-12.364v6.182h6.181v-6.182zm-6.182 6.182v6.182h6.182v-6.182zm12.363 0v6.182h6.182v-6.182zm28.91 6.182v6.181h12.363V25.91zm-6.182 6.181V56.82h6.182V32.09zm6.182 24.728V63h12.363v-6.18zm0 12.363v6.182H73.91v-6.182zm12.363-18.545v6.182h6.182v12.363h6.182V25.91H73.91v6.181h-6.182v6.182h6.182v12.364z"></path>
+  </svg>
+);

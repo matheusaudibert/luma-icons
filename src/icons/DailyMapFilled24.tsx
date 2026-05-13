@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const DailyMapFilled24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M21.02 18.29a1 1 0 0 1-.69.95L16 20.67v-16l3.69-1.23c.11-.04.21-.05.32-.05.53 0 1 .43 1 1l.02 13.9zM10 19.33l4 1.33V4.67l-4-1.33v16zM3 5.72v13.89a1.003 1.003 0 0 0 1.32.95L8 19.33v-16L3.68 4.77a1 1 0 0 0-.68.95"></path>
+  </svg>
+);

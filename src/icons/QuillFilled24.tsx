@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const QuillFilled24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M16.896 2.577c2.256-.604 4.867-1.079 5.66.433.665 1.266-.366 3.223-3.343 6.346a62 62 0 0 1-4.103 3.889.8.8 0 0 1-.446.19l-4.043.395 1.232.976a.806.806 0 0 1-.038 1.293c-2.67 1.879-5.39 2.884-8.09 2.998-.305 1.35-.355 2.254-.36 2.386a.81.81 0 0 1-.807.773l-.035-.001a.806.806 0 0 1-.772-.84c0-.04.066-1.277.549-3.134a.8.8 0 0 1 .1-.37C3.62 13.535 7.09 6.19 16.896 2.577m-6.028 18.064h6.903a.808.808 0 0 1 0 1.615h-6.903a.808.808 0 0 1 0-1.615"></path>
+  </svg>
+);

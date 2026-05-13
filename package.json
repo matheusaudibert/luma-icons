@@ -1,0 +1,42 @@
+{
+  "name": "luma-icons",
+  "version": "0.1.0",
+  "description": "Luma icon set as React components. Not affiliated with or licensed by Luma (lu.ma).",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "extract": "node scripts/extract-icons.js",
+    "generate": "node scripts/generate-components.js",
+    "build": "npm run generate && tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "playwright": "^1.49.0",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "luma",
+    "icons",
+    "react",
+    "svg"
+  ],
+  "license": "MIT"
+}

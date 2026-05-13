@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ModalTerms = ({ size = 2, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillOpacity="0.133" d="M2 15.2c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C3.52 12 4.08 12 5.2 12h1.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C10 13.52 10 14.08 10 15.2v11.133c0 .62 0 .93-.068 1.185a2 2 0 0 1-1.414 1.414C8.263 29 7.953 29 7.333 29c-1.24 0-1.86 0-2.368-.136a4 4 0 0 1-2.829-2.829C2 25.527 2 24.907 2 23.667z"></path><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.096 12.24v-6.7c0-1.277 1.235-2.13 2.307-1.58l1.015.536c.604.316 1.305.33 1.938.054l2.87-1.277a4.5 4.5 0 0 1 3.624 0l2.87 1.277a2.23 2.23 0 0 0 1.937-.054l1.016-.536c1.072-.55 2.307.29 2.307 1.58l-.014 17.853c0 3.528-1.798 5.712-5.04 5.712H6.044m4.052-16.864v12.813a4.05 4.05 0 0 1-4.052 4.051m4.052-16.864c-.384-.206-.77-.385-.92-.315l-1.937.864a2.22 2.22 0 0 1-1.936-.055L4.289 12.2c-1.072-.55-2.308.287-2.308 1.578v11.275c0 1.113.454 2.13 1.195 2.871a4.04 4.04 0 0 0 2.87 1.181M18 11h7m-7 5h7m-7 5h7"></path><circle cx="15" cy="11" r="1" fill="currentColor"></circle><circle cx="15" cy="16" r="1" fill="currentColor"></circle><circle cx="15" cy="21" r="1" fill="currentColor"></circle>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const DailyMail24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M22 7.98V5c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14c0 .55.45 1 1 1h18c.55 0 1-.45 1-1zM20 6v1.35l-8 3.56-8-3.56V6zM4 18V9.54l8 3.56 8-3.56V18z"></path>
+  </svg>
+);

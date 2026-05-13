@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const StackFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M6.566 8.89a2.9 2.9 0 0 0 2.937 0l4.377-2.566c.514-.3.82-.834.82-1.43 0-.594-.306-1.129-.819-1.43L9.503.897a2.91 2.91 0 0 0-2.937 0L2.188 3.464c-.514.301-.82.836-.82 1.43 0 .595.306 1.13.82 1.43zm5.812-.325L10.08 9.912a4.05 4.05 0 0 1-4.092 0l-2.33-1.366-1.67 1.111a1.65 1.65 0 0 0-.737 1.428c.016.574.322 1.09.818 1.38l4.496 2.636a2.9 2.9 0 0 0 2.936 0l4.48-2.626c.5-.292.805-.812.82-1.389a1.65 1.65 0 0 0-.749-1.427z"></path>
+  </svg>
+);

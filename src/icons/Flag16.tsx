@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Flag16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M3.736 1.897a4.75 4.75 0 0 1 3.528 0l2.029.812c.775.31 1.64.31 2.414 0l.191-.076.167-.055a1.35 1.35 0 0 1 1.685 1.308v5.572a1.55 1.55 0 0 1-.975 1.44l-.511.205a4.75 4.75 0 0 1-3.528 0l-2.029-.812a3.25 3.25 0 0 0-2.414 0l-.543.217V13.5a.75.75 0 0 1-1.5 0V3.542c0-.634.386-1.204.975-1.44zm2.971 1.394a3.25 3.25 0 0 0-2.414 0l-.512.204a.05.05 0 0 0-.031.047v5.35a4.75 4.75 0 0 1 3.514.006l2.029.811c.775.31 1.64.31 2.414 0l.512-.204a.05.05 0 0 0 .031-.047v-5.35a4.75 4.75 0 0 1-3.514-.005z"></path>
+  </svg>
+);

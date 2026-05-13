@@ -1,0 +1,14 @@
+import React from 'react';
+import type { LumaIconNoColorProps } from '../types';
+
+export const EventThemesPolaroidCharsSeven = ({ size = 24, ...props }: LumaIconNoColorProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 15 30"
+    {...props}
+  >
+    <path d="M12.326 2.555h.192q.896.32.896.992-.16.705-1.888 2.944-1.12 1.985-3.2 14.177l-.8 4.096-.704.512q-1.024-.352-1.024-.928 0-1.44 3.008-16h-.064Q5.702 9.626 4.134 9.69 1 9.244.998 7.867q0-.831 1.6-.992l1.216.896h.32q3.105 0 6.4-3.2.192-.8 1.792-2.016"></path>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const NotificationsUserCheck16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8.23 1.813c1.807 0 3.248 1.537 3.248 3.403 0 3.988-3.325 2.25-4.029 4.634-.524 1.777 1.929 4.33-.162 4.33-1.8-.044-4.47-.347-4.47-2.383 0-2.122 3.502-2.183 3.502-3.367v-.002c0-.814-1.337-1.201-1.337-3.212 0-1.866 1.442-3.403 3.248-3.403m4.729 6.74a.917.917 0 0 1 1.37 1.216l-2.741 3.094a.917.917 0 0 1-1.396-.029L9.068 11.46a.917.917 0 0 1 1.418-1.16l.443.542z"></path>
+  </svg>
+);

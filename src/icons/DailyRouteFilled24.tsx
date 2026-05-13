@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const DailyRouteFilled24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M17 11H7c-1.1 0-2-.9-2-2s.9-2 2-2h8.18A2.996 2.996 0 0 0 21 6c0-1.66-1.34-3-3-3-1.3 0-2.4.84-2.82 2H7C4.79 5 3 6.79 3 9s1.79 4 4 4h10c1.1 0 2 .9 2 2s-.9 2-2 2H8.82A2.996 2.996 0 0 0 3 18c0 1.66 1.34 3 3 3 1.3 0 2.4-.84 2.82-2H17c2.21 0 4-1.79 4-4s-1.79-4-4-4m1-6c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1M6 19c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"></path>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ArrowUturn16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M6.499.44a.75.75 0 0 0-1.06.062l-4 4.5a.75.75 0 0 0 0 .996l4 4.5a.75.75 0 0 0 1.122-.996L3.67 6.25H10a3.25 3.25 0 0 1 3.25 3.25v.75a4 4 0 0 1-4 4H8a.75.75 0 0 0 0 1.5h1.25a5.5 5.5 0 0 0 5.5-5.5V9.5A4.75 4.75 0 0 0 10 4.75H3.67l2.89-3.252A.75.75 0 0 0 6.5.44" clipRule="evenodd"></path>
+  </svg>
+);

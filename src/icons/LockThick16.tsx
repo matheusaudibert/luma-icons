@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const LockThick16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M12.5 4.397C12.5 1.944 10.463.001 8.01 0 5.555-.01 3.51 1.924 3.5 4.378v.902C2.049 5.848 1 7.224 1 8.874v3.252C1 14.303 2.823 16 4.989 16h6.022C13.177 16 15 14.303 15 12.126V8.874c0-1.65-1.049-3.026-2.5-3.594zM10.5 5v-.603C10.5 3.1 9.41 2 8.007 2h-.004C6.601 1.994 5.507 3.087 5.5 4.385V5zM3 8.874C3 7.875 3.853 7 4.989 7h6.022C12.147 7 13 7.875 13 8.874v3.252c0 .999-.853 1.874-1.989 1.874H4.99C3.853 14 3 13.125 3 12.126z"></path>
+  </svg>
+);

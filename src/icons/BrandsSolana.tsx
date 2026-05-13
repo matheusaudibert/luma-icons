@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const BrandsSolana = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M3.338 11.34a.47.47 0 0 1 .347-.152l10.69.008a.235.235 0 0 1 .174.394l-2.277 2.507a.47.47 0 0 1-.346.153l-10.691-.009a.235.235 0 0 1-.174-.393zM14.55 9.255a.235.235 0 0 1-.173.394l-10.691.008a.47.47 0 0 1-.347-.153L1.061 6.995a.235.235 0 0 1 .174-.394l10.69-.009a.47.47 0 0 1 .347.154l2.277 2.508Zm-11.21-7.1A.47.47 0 0 1 3.684 2l10.69.009a.235.235 0 0 1 .174.393L12.272 4.91a.47.47 0 0 1-.346.154l-10.691-.01a.235.235 0 0 1-.174-.393l2.277-2.507Z"></path>
+  </svg>
+);

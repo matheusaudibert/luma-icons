@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const X16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="m3.582 2.52 4.42 4.418L12.42 2.52a.75.75 0 0 1 1.06 1.06L9.064 8l4.419 4.42a.75.75 0 1 1-1.061 1.06L8 9.06l-4.419 4.42a.75.75 0 0 1-1.06-1.06L6.94 8 2.52 3.58a.75.75 0 0 1 1.061-1.06Z"></path>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const InfoCircleThick16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m6.25-.375c0-.483.392-.875.875-.875h1c.483 0 .875.392.875.875v3.125h.125a.875.875 0 0 1 0 1.75h-2a.875.875 0 0 1 0-1.75h.125V8.5h-.125a.875.875 0 0 1-.875-.875M7.875 5.75a1.375 1.375 0 1 0 0-2.75 1.375 1.375 0 0 0 0 2.75"></path>
+  </svg>
+);

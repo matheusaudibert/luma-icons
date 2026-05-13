@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const GemHollow16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M2.941 1.942A2.27 2.27 0 0 1 4.82.95h6.367c.752 0 1.456.372 1.88.993l2.288 3.362c.592.87.512 2.033-.198 2.812l-2.841 3.121-2.841 3.122c-.792.87-2.16.87-2.95 0l-2.841-3.121L.842 8.117a2.274 2.274 0 0 1-.196-2.812m0 0 2.295-3.362m2.184.907a.7.7 0 0 0-.578.305l-2.075 3.04a.7.7 0 0 0 .06.865l2.569 2.822 2.568 2.822a.446.446 0 0 0 .66 0l2.57-2.822 2.568-2.822a.7.7 0 0 0 .06-.866L11.46 3.156a.7.7 0 0 0-.578-.306z"></path>
+  </svg>
+);
