@@ -24,3 +24,4 @@ import { Check16, Alarm24, BrandsDiscord } from 'luma-icons'
 Some icons (brand colors, payment, weather) preserve their original colors and don't accept the `color` prop.
 
 Browse all icons at [Luma's official style guide](https://luma.com/style-guide/icons) or at https://grkg.github.io/luma-icons/.
+Acces the npm's package at https://www.npmjs.com/package/luma-icons.
