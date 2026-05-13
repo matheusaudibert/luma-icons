@@ -1,6 +1,6 @@
 {
   "name": "luma-icons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Luma icon set as React components. Not affiliated with or licensed by Luma (lu.ma).",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
