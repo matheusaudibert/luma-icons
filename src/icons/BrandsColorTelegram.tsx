@@ -1,0 +1,14 @@
+import React from 'react';
+import type { LumaIconNoColorProps } from '../types';
+
+export const BrandsColorTelegram = ({ size = 24, ...props }: LumaIconNoColorProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    {...props}
+  >
+    <g fill="none" fillRule="evenodd"><path fill="#FFF" d="M2 4h11v9H2z"></path><path fill="#2AABEE" fillRule="nonzero" d="M8 0a7.999 7.999 0 1 1 0 15.998A7.999 7.999 0 0 1 8 0m3.271 4.816c-.3.006-.762.166-2.985 1.09q-1.166.486-4.665 2.009-.568.226-.595.442c-.035.277.364.363.864.526.408.133.959.289 1.244.295q.39.008.867-.322 3.264-2.201 3.375-2.229c.05-.011.119-.026.165.016.048.041.043.12.038.141-.04.17-2.087 2.031-2.204 2.154-.45.467-.962.753-.173 1.273.684.45 1.082.738 1.785 1.2.45.294.803.644 1.268.602.214-.02.435-.221.547-.82.265-1.417.786-4.488.906-5.753a1.4 1.4 0 0 0-.013-.314.35.35 0 0 0-.114-.217.53.53 0 0 0-.31-.093"></path></g>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Journey16 = ({ size = 2, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8.269 4.154 2.382-.011c1.221-.002 2.211.907 2.206 2.026l-.003.79c-.005 1.112-.99 2.012-2.202 2.012H5.416c-1.216 0-2.202.904-2.202 2.018v.778c0 1.116.988 2.02 2.204 2.019l3.111-.003m6.292-1.926L11.93 14.75m2.892 0-2.892-2.893M3.18 6.071c-.309 0-1.929-1.37-1.929-2.805 0-1.113.863-2.016 1.929-2.016 1.065 0 1.928.903 1.928 2.016 0 1.435-1.62 2.805-1.928 2.805"></path>
+  </svg>
+);

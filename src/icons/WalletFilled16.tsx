@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const WalletFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M14.25 5.474c.307.205.57.469.776.776.474.71.474 1.697.474 3.672s0 2.962-.474 3.672c-.205.307-.469.57-.776.776-.674.45-1.599.473-3.383.474h-5.33c-2.265-.005-3.453-.064-4.213-.824S.504 12.071.5 9.808V6.5c0-.707 0-1.06.22-1.28.183-.183.459-.214.955-.219h9.467c1.606.004 2.47.046 3.108.473m-2.5 2.807a1.406 1.406 0 1 0 0 2.813 1.406 1.406 0 0 0 0-2.813M8.592 1.25H2.72A2.22 2.22 0 0 0 .5 3.47c0 .327.265.592.592.592h9.128a.59.59 0 0 0 .592-.592 2.22 2.22 0 0 0-2.22-2.22"></path>
+  </svg>
+);

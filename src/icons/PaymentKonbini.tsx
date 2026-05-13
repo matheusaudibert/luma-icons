@@ -1,0 +1,14 @@
+import React from 'react';
+import type { LumaIconNoColorProps } from '../types';
+
+export const PaymentKonbini = ({ size = 36, ...props }: LumaIconNoColorProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 36 24"
+    {...props}
+  >
+    <defs><linearGradient id="Konbini_svg__a" x1="100%" x2="1.819%" y1="72.222%" y2="26.057%"><stop offset="0%" stopColor="#949497" stopOpacity="0.12"></stop><stop offset="100%" stopColor="#949497" stopOpacity="0.04"></stop></linearGradient></defs><g fill="none"><rect width="36" height="24" fill="url(#Konbini_svg__a)" rx="6"></rect><rect width="35.5" height="23.5" x="0.25" y="0.25" stroke="#949497" strokeOpacity="0.5" strokeWidth="0.5" rx="5.75"></rect><path fill="#1667C6" d="M24.467 5.33a.636.636 0 0 0-.633-.488H12.166a.636.636 0 0 0-.633.488l-.88 2.6c-.464 1.297.162 2.736 1.412 3.25a2.48 2.48 0 0 0 1.95-.086 2.58 2.58 0 0 0 1.313-1.48.16.16 0 0 1 .147-.101c.064 0 .122.04.146.1.36 1.037 1.316 1.73 2.389 1.73s2.03-.693 2.388-1.73a.16.16 0 0 1 .146-.1c.064 0 .122.04.146.1.227.65.696 1.182 1.304 1.477s1.307.33 1.94.096c1.251-.513 1.877-1.953 1.414-3.25l-.88-2.606Zm-1.388 7.338a3.14 3.14 0 0 1-2.535-1.3 3.14 3.14 0 0 1-2.535 1.3 3.14 3.14 0 0 1-2.535-1.3 3.12 3.12 0 0 1-3.803 1.04v6.11a.66.66 0 0 0 .186.46c.12.122.28.19.449.19h6.338v-3.9c0-.36.283-.65.633-.65h1.901c.35 0 .634.29.634.65v3.9h1.9c.35 0 .634-.291.634-.65v-6.11c-.4.175-.832.264-1.267.26"></path></g>
+  </svg>
+);

@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Ribbon16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M3.75 6a4.25 4.25 0 1 1 8.5 0 4.25 4.25 0 0 1-8.5 0m.464 4.327a5.75 5.75 0 1 1 7.573 0l.43 4.3a.95.95 0 0 1-1.22 1.005l-2.983-.896a.05.05 0 0 0-.028 0l-2.984.896a.95.95 0 0 1-1.219-1.004zm1.416.913-.272 2.72 2.196-.66a1.55 1.55 0 0 1 .892 0l2.196.66-.272-2.72a5.7 5.7 0 0 1-2.37.51 5.7 5.7 0 0 1-2.37-.51" clipRule="evenodd"></path>
+  </svg>
+);

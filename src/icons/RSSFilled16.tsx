@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const RSSFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M2.207 1a1.207 1.207 0 1 0 0 2.414c5.732 0 10.38 4.647 10.38 10.38a1.207 1.207 0 1 0 2.413 0C15 6.727 9.272 1 2.207 1M1 7.25C1 6.56 1.56 6 2.25 6A7.75 7.75 0 0 1 10 13.75a1.25 1.25 0 1 1-2.5 0c0-2.9-2.35-5.25-5.25-5.25C1.56 8.5 1 7.94 1 7.25m3 6.25a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path>
+  </svg>
+);

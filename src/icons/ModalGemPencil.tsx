@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ModalGemPencil = ({ size = 2, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M29.206 15.365a3.02 3.02 0 0 0 .265-3.75l-4.577-6.69a3.06 3.06 0 0 0-2.52-1.325H9.64a3.05 3.05 0 0 0-2.519 1.324l-4.59 6.69a3.02 3.02 0 0 0 .263 3.752l10.77 11.774a2 2 0 0 0 1.476.65h.245l-4.418-12.424c-.37-1.04-.412-2.592-.101-3.751L12.898 3.6M2.013 13.316h27.973M19.11 3.6 22 13.316"></path><path fill="currentColor" fillOpacity="0.133" d="M25.381 19.007a1.673 1.673 0 0 1 2.238 2.486l-.734.66-4.87 4.383a1.8 1.8 0 0 1-1.208.464h-.25a1.557 1.557 0 0 1-1.042-2.714l4.87-4.382z"></path><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m24.385 19.615-4.867 4.867a1.77 1.77 0 0 0-.518 1.25v0c0 .977.791 1.768 1.768 1.768v0c.469 0 .918-.186 1.25-.518l4.867-4.867m-2.5-2.5.865-.865c.69-.69 1.81-.69 2.5 0v0c.69.69.69 1.81 0 2.5l-.865.865m-2.5-2.5 2.5 2.5m1.66 5.385h-2.727"></path>
+  </svg>
+);

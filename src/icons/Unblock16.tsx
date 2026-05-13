@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Unblock16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M8 .5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15m0 1.406c-1.43 0-2.744.493-3.783 1.318l.864.864a.703.703 0 0 1-.994.994l-.864-.864A6.094 6.094 0 0 0 8 14.094c1.43 0 2.742-.495 3.781-1.319l-.863-.863a.703.703 0 0 1 .994-.994l.863.863A6.07 6.07 0 0 0 14.094 8 6.094 6.094 0 0 0 8 1.906M6.364 6.365a.703.703 0 0 1 .994 0L9.635 8.64a.704.704 0 0 1-.994.995L6.364 7.359a.703.703 0 0 1 0-.994"></path>
+  </svg>
+);

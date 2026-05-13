@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const DailyMedical24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" d="M14 5v5h5v4h-5v5h-4v-5H5v-4h5V5zm1-2H9c-.55 0-1 .45-1 1v4H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h4v4c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-4h4c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1h-4V4c0-.55-.45-1-1-1"></path>
+  </svg>
+);

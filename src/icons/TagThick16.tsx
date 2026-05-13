@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const TagThick16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M3.879 8.121 8.12 3.88a3 3 0 1 1 4.243 4.242L8.12 12.364A3 3 0 1 1 3.88 8.12m-1.415 5.657a5 5 0 0 1 0-7.07l4.243-4.244a5 5 0 1 1 7.071 7.072l-4.242 4.242a5 5 0 0 1-7.072 0m8.486-7.07a1 1 0 1 0-1.415-1.415 1 1 0 0 0 1.415 1.414"></path>
+  </svg>
+);

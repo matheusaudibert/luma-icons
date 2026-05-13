@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ModalAlertHexagon = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <g fill="currentColor" fillRule="evenodd"><path fillOpacity="0.133" d="M27 15.5H5.069a1 1 0 0 0-.998 1.067l.396 5.941a1 1 0 0 0 .443.765l5.469 3.646a1 1 0 0 0 .26.124l5.961 1.834a1 1 0 0 0 .768-.075L23.5 25.5l3.237-1.85a1 1 0 0 0 .398-.42l.76-1.519a1 1 0 0 0 .105-.447V16.5a1 1 0 0 0-1-1"></path><path d="M12.5 29.134a7 7 0 0 0 7 0l6.124-3.536a7 7 0 0 0 3.5-6.062v-7.072a7 7 0 0 0-3.5-6.062L19.5 2.866a7 7 0 0 0-7 0L6.376 6.402a7 7 0 0 0-3.5 6.062v7.072a7 7 0 0 0 3.5 6.062zm6-1.732a5 5 0 0 1-5 0l-6.124-3.536a5 5 0 0 1-2.5-4.33v-7.072a5 5 0 0 1 2.5-4.33L13.5 4.598a5 5 0 0 1 5 0l6.124 3.536a5 5 0 0 1 2.5 4.33v7.072a5 5 0 0 1-2.5 4.33zM17.011 10a1 1 0 0 0-2 0v8a1 1 0 0 0 2 0zm0 13.051a1 1 0 0 0-2 0v.077a1 1 0 0 0 2 0z"></path></g>
+  </svg>
+);

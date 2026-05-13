@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luma Icons</title>
+  <link rel="icon" href="public/icon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --c: #ffffff;
+      --bg: #131517;
+      --card-bg: #1c1e21;
+      --card-border: rgba(255, 255, 255, 0.07);
+      --muted: rgba(255, 255, 255, 0.38);
+      --input-border: rgba(255, 255, 255, 0.13);
+      --divider: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* ── Centred column ── */
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 52px 24px 100px;
+    }
+
+    /* ── Title ── */
+    .page-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--divider);
+      margin-bottom: 28px;
+    }
+
+    /* ── Controls row ── */
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .search-input {
+      height: 40px;
+      width: 250px;
+      padding: 0 13px;
+      background: transparent;
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      font: inherit;
+      font-size: 16px;
+      color: #fff;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-input::placeholder {
+      color: var(--muted);
+    }
+
+    .search-input:focus {
+      border-color: rgb(255, 255, 255);
+    }
+
+    /* Color control */
+    .color-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    .color-label {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .swatch {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      border: 1px solid var(--input-border);
+      background: var(--c);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .swatch input[type="color"] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+
+    .hex-input {
+      height: 32px;
+      width: 86px;
+      padding: 0 9px;
+      background: transparent;
+      border: 1px solid var(--input-border);
+      border-radius: 7px;
+      font-size: 12px;
+      font-family: ui-monospace, 'SF Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #fff;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .hex-input:focus {
+      border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    /* ── Card ── */
+    .card {
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 16px 0px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover .icon-box {
+      outline: 1px dashed rgba(255, 255, 255, 0.12);
+    }
+
+    /* Icon */
+    .icon-box {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 7px;
+    }
+
+    .icon-box svg {
+      display: block;
+      width: 30px;
+      height: 30px;
+      color: var(--c);
+      overflow: visible;
+    }
+
+    /* Name */
+    .lbl {
+      position: relative;
+      width: 100%;
+      height: 1.35em;
+      overflow: hidden;
+      padding: 0 8px;
+    }
+
+    .lbl span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 13px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 1.35;
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider);
+    }
+
+    .caption {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .caption-asterisk {
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 600;
+    }
+
+    .caption-link {
+      color: var(--muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .caption-link:hover {
+      color: #fff;
+    }
+
+    /* Empty state */
+    .empty {
+      grid-column: 1 / -1;
+      padding: 64px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ── Modal ── */
+    .icon-modal {
+      position: fixed;
+      z-index: 200;
+      background: rgba(19, 21, 23, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 5px;
+      min-width: 158px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+
+    .modal-name {
+      font-size: 11px;
+      color: var(--muted);
+      padding: 4px 10px 5px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 200px;
+    }
+
+    .modal-sep {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin: 2px 0;
+    }
+
+    .modal-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 10px;
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      color: #fff;
+      cursor: pointer;
+      text-align: left;
+      white-space: nowrap;
+      transition: background 0.1s;
+    }
+
+    .modal-btn:hover {
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .modal-btn.ok {
+      color: #4ade80;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .page { max-width: 100%; }
+      .grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .page { padding: 36px 20px 80px; }
+      .page-title { font-size: 22px; }
+      .grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .controls { flex-wrap: wrap; }
+      .search-input { width: 100%; }
+      .color-row { margin-left: 0; }
+    }
+
+    @media (max-width: 480px) {
+      .page { padding: 24px 14px 60px; }
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .search-input { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+    <h1 class="page-title">Luma Icons</h1>
+    <div class="divider"></div>
+
+    <div class="controls">
+      <input id="q" class="search-input" type="text" placeholder="Search for an icon..." autocomplete="off"
+        spellcheck="false">
+      <div class="color-row">
+        <span class="color-label">Color</span>
+        <div class="swatch" id="swatch">
+          <input type="color" id="picker" value="#ffffff">
+        </div>
+        <input class="hex-input" id="hex" type="text" value="#FFFFFF" maxlength="7" spellcheck="false">
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <footer class="page-footer">
+      <p class="caption"><span class="caption-asterisk">*</span> Some icons may be missing due to errors during SVG extraction.</p>
+      <p class="caption">This project is not affiliated with or licensed by <a class="caption-link" href="https://lu.ma" target="_blank" rel="noopener noreferrer">Luma</a>.</p>
+    </footer>
+  </div>
+
+  <!-- Icon action modal -->
+  <div id="icon-modal" class="icon-modal">
+    <div class="modal-name" id="modal-name"></div>
+    <div class="modal-sep"></div>
+    <button class="modal-btn" id="modal-png">Download PNG</button>
+    <button class="modal-btn" id="modal-svg">Download SVG</button>
+    <button class="modal-btn" id="modal-copy">Copy SVG code</button>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var color = '#ffffff';
+      var allIcons = [];
+      var searchTimer;
+      var noColorSet = new Set();
+      var activeIcon = null;
+
+      /* ── Load no-color list ──────────────────────────────────────────── */
+
+      fetch('icons-to-no-color.txt')
+        .then(function (r) { return r.ok ? r.text() : ''; })
+        .then(function (text) {
+          text.split('\n').forEach(function (line) {
+            var l = line.trim();
+            if (l) noColorSet.add(l);
+          });
+        })
+        .catch(function () {});
+
+      /* ── SVG helpers ─────────────────────────────────────────────────── */
+
+      function getViewBox(raw) {
+        var m = raw.match(/viewBox="([^"]*)"/);
+        return m ? m[1] : '0 0 24 24';
+      }
+
+      function getSvgInner(raw) {
+        var m = raw.match(/<svg[^>]*>([\s\S]*?)<\/svg>\s*$/i);
+        return m ? m[1] : '';
+      }
+
+      /* 32×32 display SVG preserving original viewBox; colour via CSS var */
+      function buildDisplay(raw) {
+        var vb = getViewBox(raw);
+        var inner = getSvgInner(raw);
+        return (
+          '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="' + vb + '">' +
+          inner +
+          '</svg>'
+        );
+      }
+
+      /* Strip injected scripts/comments (e.g. live-server) */
+      function sanitizeSvg(raw) {
+        return raw
+          .replace(/<!--[\s\S]*?-->/g, '')
+          .replace(/<script[\s\S]*?<\/script>/gi, '')
+          .replace(/\n{2,}/g, '\n')
+          .replace(/\s+(<\/svg>)/gi, '$1')
+          .trim();
+      }
+
+      /* Replace hardcoded colours */
+      function recolour(raw, col) {
+        return raw
+          .replace(/\bfill="(?!none(?:"|$))[^"]*"/g, 'fill="' + col + '"')
+          .replace(/\bstroke="(?!none(?:"|$))[^"]*"/g, 'stroke="' + col + '"');
+      }
+
+      /* SVG ready for download */
+      function prepSvg(ic, col, size) {
+        var clean = sanitizeSvg(ic.raw);
+        var content = noColorSet.has(ic.path) ? clean : recolour(clean, col);
+        if (size) {
+          content = content.replace(/<svg([^>]*)>/, function (m, attrs) {
+            attrs = attrs.replace(/\bwidth="[^"]*"/, '').replace(/\bheight="[^"]*"/, '');
+            return '<svg' + attrs + ' width="' + size + '" height="' + size + '">';
+          });
+        }
+        return content;
+      }
+
+      /* ── Data loading ────────────────────────────────────────────────── */
+
+      function fetchText(url) {
+        return fetch(url)
+          .then(function (r) { return r.ok ? r.text() : null; })
+          .catch(function () { return null; });
+      }
+
+      function loadAll(manifest) {
+        return Promise.all(
+          manifest.map(function (iconPath) {
+            return fetchText('public/icons/' + iconPath + '.svg').then(function (raw) {
+              if (!raw) return null;
+              return {
+                path: iconPath,
+                name: iconPath,
+                raw: raw,
+                display: buildDisplay(raw),
+              };
+            });
+          })
+        ).then(function (list) { return list.filter(Boolean); });
+      }
+
+      /* ── Render ──────────────────────────────────────────────────────── */
+
+      function render(q) {
+        var list = q
+          ? allIcons.filter(function (ic) {
+            return ic.path.toLowerCase().indexOf(q.toLowerCase()) !== -1;
+          })
+          : allIcons;
+
+        var grid = document.getElementById('grid');
+
+        if (!list.length) {
+          grid.innerHTML = '<div class="empty">No icons found</div>';
+          return;
+        }
+
+        var html = '';
+        list.forEach(function (ic) {
+          html +=
+            '<div class="card" data-path="' + ic.path + '">' +
+            '<div class="icon-box">' + ic.display + '</div>' +
+            '<div class="lbl"><span>' + ic.name + '</span></div>' +
+            '</div>';
+        });
+
+        grid.innerHTML = html;
+      }
+
+      /* ── Color ───────────────────────────────────────────────────────── */
+
+      function applyColor(c) {
+        color = c;
+        document.documentElement.style.setProperty('--c', c);
+        document.getElementById('swatch').style.background = c;
+      }
+
+      /* ── Modal ───────────────────────────────────────────────────────── */
+
+      function showModal(ic, cardEl) {
+        activeIcon = ic;
+        var modal = document.getElementById('icon-modal');
+        var copyBtn = document.getElementById('modal-copy');
+
+        document.getElementById('modal-name').textContent = ic.name;
+        copyBtn.textContent = 'Copy SVG code';
+        copyBtn.classList.remove('ok');
+
+        /* measure hidden, then position */
+        modal.style.visibility = 'hidden';
+        modal.style.display = 'block';
+        var mh = modal.offsetHeight;
+        var mw = modal.offsetWidth;
+        modal.style.display = 'none';
+        modal.style.visibility = '';
+
+        var rect = cardEl.getBoundingClientRect();
+        var left = rect.left + rect.width / 2 - mw / 2;
+        var top = rect.top - mh - 8;
+
+        left = Math.max(8, Math.min(left, window.innerWidth - mw - 8));
+        if (top < 8) top = rect.bottom + 8;
+
+        modal.style.left = left + 'px';
+        modal.style.top = top + 'px';
+        modal.style.display = 'block';
+      }
+
+      function hideModal() {
+        document.getElementById('icon-modal').style.display = 'none';
+        activeIcon = null;
+      }
+
+      /* ── Download helpers ────────────────────────────────────────────── */
+
+      function triggerDownload(url, filename) {
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+
+      function downloadSvg(ic) {
+        var content = prepSvg(ic, color, null);
+        var blob = new Blob([content], { type: 'image/svg+xml' });
+        var url = URL.createObjectURL(blob);
+        triggerDownload(url, ic.path.replace(/\//g, '_') + '.svg');
+        URL.revokeObjectURL(url);
+      }
+
+      function downloadPng(ic) {
+        var size = 256;
+        var content = prepSvg(ic, color, size);
+        var blob = new Blob([content], { type: 'image/svg+xml' });
+        var url = URL.createObjectURL(blob);
+        var img = new Image();
+        img.onload = function () {
+          var canvas = document.createElement('canvas');
+          canvas.width = size;
+          canvas.height = size;
+          canvas.getContext('2d').drawImage(img, 0, 0, size, size);
+          URL.revokeObjectURL(url);
+          canvas.toBlob(function (pngBlob) {
+            var pngUrl = URL.createObjectURL(pngBlob);
+            triggerDownload(pngUrl, ic.path.replace(/\//g, '_') + '.png');
+            URL.revokeObjectURL(pngUrl);
+          });
+        };
+        img.src = url;
+      }
+
+      function copySvg(ic) {
+        var content = prepSvg(ic, color, null);
+        var copyBtn = document.getElementById('modal-copy');
+
+        function onCopied() {
+          copyBtn.textContent = 'Copied!';
+          copyBtn.classList.add('ok');
+          setTimeout(hideModal, 900);
+        }
+
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(content).then(onCopied).catch(fallback);
+        } else {
+          fallback();
+        }
+
+        function fallback() {
+          var ta = document.createElement('textarea');
+          ta.value = content;
+          ta.style.cssText = 'position:fixed;opacity:0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          onCopied();
+        }
+      }
+
+      /* ── Events ──────────────────────────────────────────────────────── */
+
+      document.getElementById('q').addEventListener('input', function (e) {
+        clearTimeout(searchTimer);
+        var v = e.target.value;
+        searchTimer = setTimeout(function () { render(v); }, 130);
+      });
+
+      document.getElementById('picker').addEventListener('input', function (e) {
+        var c = e.target.value;
+        document.getElementById('hex').value = c.toUpperCase();
+        applyColor(c);
+      });
+
+      document.getElementById('hex').addEventListener('input', function (e) {
+        var v = e.target.value.trim();
+        if (v.charAt(0) !== '#') v = '#' + v;
+        if (/^#[0-9A-Fa-f]{6}$/.test(v)) {
+          document.getElementById('picker').value = v.toLowerCase();
+          applyColor(v);
+        }
+      });
+
+      document.getElementById('hex').addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') e.target.blur();
+      });
+
+      /* card click → open modal */
+      document.getElementById('grid').addEventListener('click', function (e) {
+        var card = e.target.closest('.card');
+        if (!card) return;
+        e.stopPropagation();
+
+        var path = card.dataset.path;
+        var modal = document.getElementById('icon-modal');
+
+        if (activeIcon && activeIcon.path === path && modal.style.display !== 'none') {
+          hideModal();
+          return;
+        }
+
+        var ic = allIcons.find(function (x) { return x.path === path; });
+        if (ic) showModal(ic, card);
+      });
+
+      /* click outside → close modal */
+      document.addEventListener('click', function (e) {
+        var modal = document.getElementById('icon-modal');
+        if (modal.style.display === 'none') return;
+        if (modal.contains(e.target)) return;
+        hideModal();
+      });
+
+      /* scroll → close modal */
+      window.addEventListener('scroll', hideModal, { passive: true });
+
+      document.getElementById('modal-png').addEventListener('click', function () {
+        if (!activeIcon) return;
+        downloadPng(activeIcon);
+        hideModal();
+      });
+
+      document.getElementById('modal-svg').addEventListener('click', function () {
+        if (!activeIcon) return;
+        downloadSvg(activeIcon);
+        hideModal();
+      });
+
+      document.getElementById('modal-copy').addEventListener('click', function () {
+        if (!activeIcon) return;
+        copySvg(activeIcon);
+      });
+
+      /* ── Boot ────────────────────────────────────────────────────────── */
+
+      fetch('public/icons-manifest.json')
+        .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+        .then(loadAll)
+        .then(function (icons) {
+          allIcons = icons;
+          render('');
+        })
+        .catch(function () {
+          document.getElementById('grid').innerHTML =
+            '<div class="empty">Icons not found — run <code>node scripts/extract-icons.js</code> first.</div>';
+        });
+    }());
+  </script>
+</body>
+
+</html>

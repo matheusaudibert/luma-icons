@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const Hashtag16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M7.182 1.273a.75.75 0 0 1 .546.91L6.96 5.25h3.453l.858-3.432a.75.75 0 0 1 1.456.364L11.96 5.25H14a.75.75 0 0 1 0 1.5h-2.414l-.875 3.5H13a.75.75 0 0 1 0 1.5h-2.664l-.608 2.432a.75.75 0 0 1-1.456-.364l.517-2.068H5.336l-.608 2.432a.75.75 0 0 1-1.456-.364l.517-2.068H2a.75.75 0 0 1 0-1.5h2.164l.875-3.5H3a.75.75 0 0 1 0-1.5h2.414l.858-3.432a.75.75 0 0 1 .91-.545m1.982 8.977.875-3.5H6.586l-.875 3.5z"></path>
+  </svg>
+);

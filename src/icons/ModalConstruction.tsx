@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const ModalConstruction = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillOpacity="0.133" fillRule="evenodd" d="M9.44 7h13.12c1.297 0 2.455-.039 3.45-.072C28.532 6.844 30 6.796 30 7.5V13c0 .578-.99.475-2.742.293-1.222-.127-2.814-.293-4.7-.293H9.44c-1.297 0-2.456.039-3.45.072-2.522.084-3.99.132-3.99-.572v-5c0-.705 1.477-.655 4-.572.993.034 2.148.072 3.44.072m0 9h13.12c1.297 0 2.455-.039 3.45-.072 2.522-.084 3.99-.132 3.99.572V22c0 .578-.99.475-2.742.293-1.222-.127-2.814-.293-4.7-.293H9.44c-1.297 0-2.456.038-3.45.072-2.522.084-3.99.132-3.99-.572v-5c0-.705 1.477-.655 4-.572.993.033 2.148.072 3.44.072" clipRule="evenodd"></path><path fill="currentColor" fillRule="evenodd" d="M6 2a1 1 0 0 1 1 1v2h18V3a1 1 0 1 1 2 0v2h2.8A1.2 1.2 0 0 1 31 6.2v5.6a1.2 1.2 0 0 1-1.2 1.2H27v1h2.8a1.2 1.2 0 0 1 1.2 1.2v5.6a1.2 1.2 0 0 1-1.2 1.2H27v7.5a1 1 0 1 1-2 0V22H7v7.5a1 1 0 1 1-2 0V22H2.2A1.2 1.2 0 0 1 1 20.8v-5.6A1.2 1.2 0 0 1 2.2 14H5v-1H2.2A1.2 1.2 0 0 1 1 11.8V6.2A1.2 1.2 0 0 1 2.2 5H5V3a1 1 0 0 1 1-1m14 11h5v1H7v-1zM3 7h6.086l-4 4H3zm4.914 4 4-4h4.42l-4 4zm7.248 0 4-4h4.424l-4 4zm7.252 0 4-4H29v4zM3 20v-4h6.086l-4 4zm4.914 0 4-4h4.312l-4 4zm7.14 0 4-4h4.532l-4 4zm7.36 0 4-4H29v4z" clipRule="evenodd"></path>
+  </svg>
+);

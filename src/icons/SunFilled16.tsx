@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const SunFilled16 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 16 16"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="M9 1.5a1 1 0 1 0-2 0v.99a1 1 0 0 0 2 0zm4.303 2.61a1 1 0 1 0-1.414-1.413l-.7.7a1 1 0 0 0 1.414 1.414zM4.111 2.698A1 1 0 1 0 2.697 4.11l.7.7a1 1 0 0 0 1.415-1.414zM1.5 7a1 1 0 0 0 0 2h.99a1 1 0 1 0 0-2zm12.01 0a1 1 0 1 0 0 2h.99a1 1 0 1 0 0-2zm-8.698 5.603a1 1 0 1 0-1.415-1.415l-.7.701a1 1 0 1 0 1.414 1.414zm7.79-1.415a1 1 0 0 0-1.414 1.415l.701.7a1 1 0 0 0 1.414-1.414zM9 13.51a1 1 0 1 0-2 0v.991a1 1 0 1 0 2 0zM11.5 8a3.5 3.5 0 1 0-7 0 3.5 3.5 0 0 0 7 0"></path>
+  </svg>
+);

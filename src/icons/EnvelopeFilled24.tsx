@@ -1,0 +1,15 @@
+import React from 'react';
+import type { LumaIconProps } from '../types';
+
+export const EnvelopeFilled24 = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    style={{ color, ...style }}
+    {...props}
+  >
+    <path fill="currentColor" fillRule="evenodd" d="m18.36 12.301-4.529 3.622c-.559.42-1.195.63-1.829.63-.63 0-1.259-.208-1.807-.62L5.76 12.297a.57.57 0 0 1-.207-.438c0-2.201 1.466-3.623 3.736-3.623h5.548c2.27 0 3.734 1.422 3.734 3.623a.57.57 0 0 1-.211.442m2.8-5.323L14.111 2.09c-.025-.015-.052-.025-.077-.04a3.67 3.67 0 0 0-1.97-.55 3.66 3.66 0 0 0-1.972.55c-.026.015-.052.025-.078.04L2.965 6.978C1.869 7.8 1.25 8.996 1.25 10.274v6.68c0 3.421 2.212 5.546 5.775 5.546H17.1c3.562 0 5.774-2.125 5.774-5.547v-6.68c0-1.277-.619-2.474-1.715-3.295"></path>
+  </svg>
+);
