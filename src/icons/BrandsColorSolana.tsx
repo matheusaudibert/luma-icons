@@ -1,14 +1,15 @@
 import React from 'react';
-import type { LumaIconNoColorProps } from '../types';
+import type { LumaIconProps } from '../types';
 
-export const BrandsColorSolana = ({ size = 24, ...props }: LumaIconNoColorProps) => (
+export const BrandsColorSolana = ({ size = 24, color = 'currentColor', style, ...props }: LumaIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     viewBox="0 0 16 16"
+    style={{ color, ...style }}
     {...props}
   >
-    <defs><linearGradient id="solana_svg__a" x1="90.737%" x2="35.509%" y1="29.75%" y2="57.203%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient><linearGradient id="solana_svg__b" x1="66.588%" x2="11.36%" y1="41.752%" y2="69.206%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient><linearGradient id="solana_svg__c" x1="78.586%" x2="23.358%" y1="35.79%" y2="63.243%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient></defs><g fill="none"><path fill="url(#solana_svg__a)" d="M2.211 9.337a.42.42 0 0 1 .315-.15h10.86c.2 0 .299.277.158.439L11.4 12.1a.42.42 0 0 1-.315.15H.224c-.2 0-.299-.276-.158-.438z" transform="translate(1 2)"></path><path fill="url(#solana_svg__b)" d="M2.211.15A.43.43 0 0 1 2.526 0h10.86c.2 0 .299.276.158.438L11.4 2.913a.42.42 0 0 1-.315.15H.224c-.2 0-.299-.277-.158-.439z" transform="translate(1 2)"></path><path fill="url(#solana_svg__c)" d="M11.399 4.74a.42.42 0 0 0-.315-.15H.224c-.2 0-.299.276-.158.438L2.21 7.503c.082.094.195.15.315.15h10.86c.2 0 .299-.277.158-.439z" transform="translate(1 2)"></path></g>
+    <defs><linearGradient id="solana_svg__a" x1="90.737%" x2="35.509%" y1="29.75%" y2="57.203%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient><linearGradient id="solana_svg__b" x1="66.588%" x2="11.36%" y1="41.752%" y2="69.206%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient><linearGradient id="solana_svg__c" x1="78.586%" x2="23.358%" y1="35.79%" y2="63.243%"><stop offset="0%" stopColor="#00FFA3"></stop><stop offset="100%" stopColor="#DC1FFF"></stop></linearGradient></defs><g fill="none"><path fill="currentColor" d="M2.211 9.337a.42.42 0 0 1 .315-.15h10.86c.2 0 .299.277.158.439L11.4 12.1a.42.42 0 0 1-.315.15H.224c-.2 0-.299-.276-.158-.438z" transform="translate(1 2)"></path><path fill="currentColor" d="M2.211.15A.43.43 0 0 1 2.526 0h10.86c.2 0 .299.276.158.438L11.4 2.913a.42.42 0 0 1-.315.15H.224c-.2 0-.299-.277-.158-.439z" transform="translate(1 2)"></path><path fill="currentColor" d="M11.399 4.74a.42.42 0 0 0-.315-.15H.224c-.2 0-.299.276-.158.438L2.21 7.503c.082.094.195.15.315.15h10.86c.2 0 .299-.277.158-.439z" transform="translate(1 2)"></path></g>
   </svg>
 );

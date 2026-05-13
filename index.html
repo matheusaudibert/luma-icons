@@ -313,23 +313,55 @@
 
     /* ── Responsive ── */
     @media (max-width: 1024px) {
-      .page { max-width: 100%; }
-      .grid { grid-template-columns: repeat(4, 1fr); }
+      .page {
+        max-width: 100%;
+      }
+
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
     @media (max-width: 768px) {
-      .page { padding: 36px 20px 80px; }
-      .page-title { font-size: 22px; }
-      .grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-      .controls { flex-wrap: wrap; }
-      .search-input { width: 100%; }
-      .color-row { margin-left: 0; }
+      .page {
+        padding: 36px 20px 80px;
+      }
+
+      .page-title {
+        font-size: 22px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .controls {
+        flex-wrap: wrap;
+      }
+
+      .search-input {
+        width: 100%;
+      }
+
+      .color-row {
+        margin-left: 0;
+      }
     }
 
     @media (max-width: 480px) {
-      .page { padding: 24px 14px 60px; }
-      .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-      .search-input { width: 100%; }
+      .page {
+        padding: 24px 14px 60px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .search-input {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -355,8 +387,10 @@
     <div class="grid" id="grid"></div>
 
     <footer class="page-footer">
-      <p class="caption"><span class="caption-asterisk">*</span> Some icons may be missing due to errors during SVG extraction.</p>
-      <p class="caption">This project is not affiliated with or licensed by <a class="caption-link" href="https://lu.ma" target="_blank" rel="noopener noreferrer">Luma</a>.</p>
+      <p class="caption"><span class="caption-asterisk">*</span> Some icons may be missing due to errors during SVG
+        extraction.</p>
+      <p class="caption">This project is not affiliated with or licensed by <a class="caption-link" href="https://lu.ma"
+          target="_blank" rel="noopener noreferrer">Luma</a>.</p>
     </footer>
   </div>
 
@@ -389,7 +423,7 @@
             if (l) noColorSet.add(l);
           });
         })
-        .catch(function () {});
+        .catch(function () { });
 
       /* ── SVG helpers ─────────────────────────────────────────────────── */
 
@@ -419,9 +453,9 @@
         return raw
           .replace(/<!--[\s\S]*?-->/g, '')
           .replace(/<script[\s\S]*?<\/script>/gi, '')
-          .replace(/\n{2,}/g, '\n')
-          .replace(/\s+(<\/svg>)/gi, '$1')
-          .trim();
+              .replace(/\n{2,}/g, '\n')
+              .replace(/\s+(<\/svg>)/gi, '$1')
+              .trim();
       }
 
       /* Replace hardcoded colours */

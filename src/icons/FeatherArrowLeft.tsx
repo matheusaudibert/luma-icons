@@ -1,12 +1,13 @@
 import React from 'react';
-import type { LumaIconNoColorProps } from '../types';
+import type { LumaIconProps } from '../types';
 
-export const FeatherArrowLeft = ({ size = 2, ...props }: LumaIconNoColorProps) => (
+export const FeatherArrowLeft = ({ size = 2, color = 'currentColor', style, ...props }: LumaIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
     height={size}
     viewBox="0 0 24 24"
+    style={{ color, ...style }}
     {...props}
   >
     <path d="M19 12H5M12 19l-7-7 7-7"></path>
